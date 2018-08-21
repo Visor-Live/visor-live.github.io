@@ -84,11 +84,10 @@
           To view the Processing reference click <a class="text-link" href="https://www.processing.org/reference/" target="_blank">here</a>.<br />
         </p>
 
-        <span class="manager">Please note</span>
-        <ul>
-          <li>All methods that start with <span style="color:#66D9EF;">with_</span> accept a block as an argument.</li>
-          <li>This reference is incomplete and subject to change.</li>
-        </ul>
+        <p>
+          <strong>Please note</strong><br />
+          This reference is incomplete and subject to change.
+        </p>
 
         <span class="manager">Audio Input</span>
 
@@ -109,6 +108,32 @@
           <span class="method">on_beat</span>
           <span class="method">beat_progress</span>
         </div>
+
+        <span class="manager">MIDI</span>
+
+        <div class="method-list">
+          <span class="method">na1, na2, na3, na4
+          <span class="method">na1_down, na2_down, na3_down, na4_down
+          <span class="method">na1_up, na2_up, na3_up, na4_up
+
+          <span class="method">nb1, nb2, nb3, nb4
+          <span class="method">nb1_down, nb2_down, nb3_down, nb4_down
+          <span class="method">nb1_up, nb2_up, nb3_up, nb4_up
+
+          <span class="method">ka1, ka2, ka3
+          <span class="method">kb1, kb2, kb3
+          <span class="method">kc1, kc2, kc3
+
+          <span class="method">s1, s2, s3
+        </div>
+
+        <p>
+          <strong>Please note</strong><br />
+          Currently, the Novation Launch Control XL is only partially supported - full support for generic controllers is coming soon.<br />
+          <span class="method-inline">n*</span> maps to a note button.
+          <span class="method-inline">k*</span> maps to a knob control.
+          <span class="method-inline">s*</span> maps to a slider control.
+        </p>
 
         <span class="manager">Live Code</span>
 
@@ -137,6 +162,11 @@
           <span class="method">with_rotate(*args)</span>
           <span class="method">with_graphics(graphics_layer, *args, &block)</span>
         </div>
+
+        <p>
+          <strong>Please note</strong><br />
+          All methods that start with <span class="method-inline">with_</span> accept a block as an argument.
+        </p>
       </div>
 
       <h2 id="Contact">Contact</h2>
