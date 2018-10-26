@@ -82,11 +82,11 @@ h3 {
 }
 
 .main-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .text-link {
@@ -115,4 +115,11 @@ h3 {
 
 .method-inline {
   color:#66D9EF;
+}
+
+.copyright-notice {
+  color: #777777;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
 }
