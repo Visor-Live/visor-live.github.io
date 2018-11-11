@@ -66,6 +66,10 @@
         </p>
 
         <p>
+          Mac, Windows and Linux are supported.
+        </p>
+
+        <p>
           Please click <a class="text-link" href="https://github.com/Visor-Live/visor-builds/releases" target="_blank">here</a> to download the latest builds.
         </p>
       </div>
@@ -99,13 +103,16 @@
 
         <div class="method-list">
           <span class="method">volume</span>
+          <span class="method">fft(index)</span>
+          <span class="method">fft_range(start_index, end_index)</span>
+          <span class="method">fft_range_avg(start_index, end_index)</span>
+          <span class="method">fft_size</span>
+          <span class="method">waveform(index)</span>
+          <span class="method">waveform_size</span>
           <span class="method">fft_smooth</span>
-          <span class="method">set_fft_smooth(amount)</span>
           <span class="method">fft_scale</span>
-          <span class="method">set_fft_scale(amount)</span>
-          <span class="method">fft(band)</span>
-          <span class="method">fft_range(start_band, end_band)</span>
-          <span class="method">fft_range_avg(start_band, end_band)</span>
+          <span class="method">set_fft_smooth(value)</span>
+          <span class="method">set_fft_scale(value)</span>
         </div>
 
         <span class="manager">Tap Tempo</span>
@@ -119,28 +126,31 @@
         <span class="manager">MIDI</span>
 
         <div class="method-list">
-          <span class="method">na1, na2, na3, na4
-          <span class="method">na1_down, na2_down, na3_down, na4_down
-          <span class="method">na1_up, na2_up, na3_up, na4_up
+          <span class="method">attach_state_to_midi(variable_name, midi_variable_name)</span>
+          <span class="method">detach_state_from_midi(variable_name, midi_variable_name)</span>
 
-          <span class="method">nb1, nb2, nb3, nb4
-          <span class="method">nb1_down, nb2_down, nb3_down, nb4_down
-          <span class="method">nb1_up, nb2_up, nb3_up, nb4_up
+          <!-- <span class="method">na1, na2, na3, na4</span>
+          <span class="method">na1_down, na2_down, na3_down, na4_down</span>
+          <span class="method">na1_up, na2_up, na3_up, na4_up</span>
 
-          <span class="method">ka1, ka2, ka3
-          <span class="method">kb1, kb2, kb3
-          <span class="method">kc1, kc2, kc3
+          <span class="method">nb1, nb2, nb3, nb4</span>
+          <span class="method">nb1_down, nb2_down, nb3_down, nb4_down</span>
+          <span class="method">nb1_up, nb2_up, nb3_up, nb4_up</span>
 
-          <span class="method">s1, s2, s3
+          <span class="method">ka1, ka2, ka3</span>
+          <span class="method">kb1, kb2, kb3</span>
+          <span class="method">kc1, kc2, kc3</span>
+
+          <span class="method">s1, s2, s3</span> -->
         </div>
 
-        <p>
+        <!-- <p>
           <strong>Please note</strong><br />
           Currently, the Novation Launch Control XL is the only supported controller and partially at that - full support for generic controllers is coming soon.<br />
           <span class="method-inline">n*</span> maps to a note button,
           <span class="method-inline">k*</span> maps to a knob control,
           <span class="method-inline">s*</span> maps to a slider control.
-        </p>
+        </p> -->
 
         <span class="manager">Live Code</span>
 
@@ -169,6 +179,12 @@
           <span class="method">with_rotate_z(z)</span>
           <span class="method">with_rotate(*args)</span>
           <span class="method">with_graphics(graphics_layer, *args, &block)</span>
+        </div>
+
+        <span class="manager">Other</span>
+
+        <div class="method-list">
+          <span class="method">set_master_opacity(value)</span>
         </div>
 
         <p>
