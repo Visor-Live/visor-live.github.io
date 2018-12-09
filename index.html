@@ -208,9 +208,20 @@
       <h2 id="Contact">Contact</h2>
 
       <div class="section">
-        <p>To give feedback or report bugs please contact <a class="text-link" href="mailto:live.visor@gmail.com">live.visor@gmail.com</a>.</p>
+        <p>To give feedback or report bugs please contact <a class="text-link" id="emailAddress"></a>.</p>
       </div>
     </div>
+
+    <script type="text/javascript">
+        user = 'live.visor';
+        domain = 'gmail.com';
+        email = user + '@' + domain;
+
+        element = document.getElementById('emailAddress');
+
+        element.innerHTML = email;
+        element.setAttribute('href', 'mailto:' + email);
+      </script>
 
     <div class="copyright-notice">
       Copyright © 2018 Jack Purvis - All Rights Reserved
