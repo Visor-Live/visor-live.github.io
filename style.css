@@ -4,30 +4,27 @@ body {
   background-color: #40403d;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 h1 {
   color: #dddddd;
   text-align: center;
-  margin-bottom: 12px;
-}
-
-h2 {
-  color: #dddddd;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-
-h2:after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  border-bottom: 1px solid grey;
-  margin-top: 2px;
+  margin: 16px 0;
 }
 
 h3 {
   color: #dddddd;
+  margin: 16px 0;
+  text-align: center;
+}
+
+h3 {
+  color: #dddddd;
+}
+
+p {
+  margin: 0;
 }
 
 .content {
@@ -46,8 +43,40 @@ h3 {
   margin-left: 0px;
 }
 
-.section {
-  margin: 16px;
+.panel {
+  background-color: #4c4c4c;
+  border-radius: 16px;
+  padding: 16px 32px;
+  text-align: justify;
+  margin: 32px auto;
+}
+
+.panel.product-description {
+  width: 75%;
+}
+
+.panel.features {
+  width: 75%;
+}
+
+.panel.downloads {
+  width: 75%;
+}
+
+.panel.installation {
+  width: 75%;
+}
+
+.panel.learning {
+  width: 75%;
+}
+
+.panel.reference {
+  width: 75%;
+}
+
+.panel.contact {
+  width: 75%;
 }
 
 .center-text {
@@ -87,6 +116,21 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.feature {
+  padding: 32px 0;
+  width: 100%;
+  height: 25%;
+  text-align: center;
 }
 
 .text-link {
