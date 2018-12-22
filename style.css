@@ -10,7 +10,7 @@ body {
 h1 {
   color: #dddddd;
   text-align: center;
-  margin: 16px 0;
+  margin: 32px 0;
 }
 
 h3 {
@@ -27,10 +27,6 @@ p {
   margin: 0;
 }
 
-.content {
-  padding: 15px;
-}
-
 .navbar {
   background-color: #272822;
   border: none;
@@ -44,6 +40,7 @@ p {
 }
 
 .panel {
+  width: 75%;
   background-color: #4c4c4c;
   border-radius: 16px;
   padding: 16px 32px;
@@ -51,32 +48,15 @@ p {
   margin: 32px auto;
 }
 
-.panel.product-description {
-  width: 75%;
-}
-
 .panel.features {
-  width: 75%;
+  width: 95%;
+  background-color: #40403d;
 }
 
-.panel.downloads {
-  width: 75%;
-}
-
-.panel.installation {
-  width: 75%;
-}
-
-.panel.learning {
-  width: 75%;
-}
-
-.panel.reference {
-  width: 75%;
-}
-
-.panel.contact {
-  width: 75%;
+.features-section {
+  background-color: #4c4c4c;
+  padding: 16px 0;
+  margin: 32px 0;
 }
 
 .center-text {
@@ -86,11 +66,7 @@ p {
 .main-image {
   width: 100%;
   max-width: 1024px;
-
-  margin-top: 16px;
-  margin-bottom: 8px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 16px auto;
 }
 
 .main-image img {
@@ -102,8 +78,8 @@ p {
   width: 100%;
   max-width: 1024px;
 
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin-top: 32px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 
@@ -131,6 +107,12 @@ p {
   width: 100%;
   height: 25%;
   text-align: center;
+}
+
+.feature img {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 16px;
 }
 
 .text-link {

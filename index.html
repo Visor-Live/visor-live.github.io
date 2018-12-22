@@ -30,11 +30,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#Installation">Installation</a>
+            <a class="nav-link" href="#Demo">Demo</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#Learning">Learning</a>
+            <a class="nav-link" href="#Installation">Installation</a>
           </li>
 
           <li class="nav-item">
@@ -48,10 +48,10 @@
       </div>
     </nav>
 
-    <div class="content">
+    <div>
       <h1>Visor</h1>
 
-      <div class="panel product-description">
+      <div class="panel">
         <p class="center-text">
           Visor is a live coding environment for creative coding of graphics in audiovisual performances.<br />
           Live coding is performed in the Ruby language and graphical capabilities are provided by Processing.
@@ -62,65 +62,78 @@
         <img src="visor.png" />
       </div>
 
-      <div class="main-video">
-        <iframe width="1024" height="576" src="https://www.youtube.com/embed/C01pvVyf-XU?rel=0" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <div class="features-section">
+        <h3 id="Features">Features</h3>
 
-      <h3 id="Features">Features</h3>
+        <div class="panel features">
+          
+          <div class="row">
+            <div class="col">
+              <div class="feature">
+                <img src="features/processing.png" />
+                <span class="method">Live coding with Processing</span>
+                Update your program in real-time without restarting the application
+              </div>
 
-      <div class="panel features">
-        
-        <div class="row">
-          <div class="col">
-            <div class="feature">
-              <span class="method">Live coding with Processing</span>
-              Update your program in real-time without restarting the application
+              <div class="feature">
+                <img src="features/state.png" />
+                <span class="method">State management interface</span>
+                Interact with program parameters as they are automatically displayed in the interface
+              </div>
+
+              <div class="feature">
+                <img src="features/fft.png" />
+                <span class="method">Audio analysis</span>
+                View the frequency spectrum of an audio input in the interface and access the audio data in the code to drive visuals
+              </div>
+
+              <div class="feature">
+                <img src="features/midi.png" />
+                <span class="method">MIDI support</span>
+                Configure MIDI controllers to create mappings between controls and program parameters, or directly access control values in your code
+              </div>
             </div>
 
-            <div class="feature">
-              <span class="method">State management interface</span>
-              Interact with program parameters as they are automatically displayed in the interface
-            </div>
+            <div class="col">
+              <div class="feature">
+                <img src="features/ruby.png" />
+                <span class="method">Ruby language</span>
+                Simple, speedy creative coding while making use of powerful language features such as enumerators and blocks
+              </div>
 
-            <div class="feature">
-              <span class="method">Real-time audio analysis</span>
-              View the frequency spectrum of an audio input in the interface and access the audio data in the code to drive visuals
-            </div>
+              <div class="feature">
+                <img src="features/layers.png" />
+                <span class="method">Layers</span>
+                Organise your code into rearrangeable layers and configure their blend modes to create new compositions
+              </div>
 
-            <div class="feature">
-              <span class="method">MIDI input support</span>
-              Configure MIDI controllers to create mappings between controls and program parameters, or directly access control values in your code
-            </div>
-          </div>
+              <div class="feature">
+                <img src="features/taptempo.png" />
+                <span class="method">Tap tempo</span>
+                Tap to the tempo of the music and create visuals that animate on the beat
+              </div>
 
-          <div class="col">
-            <div class="feature">
-              <span class="method">Ruby language</span>
-              Simple, speedy creative coding while making use of powerful language features such as enumerators and blocks
-            </div>
-
-            <div class="feature">
-              <span class="method">Layers</span>
-              Organise your code into rearrangeable layers and configure their blend modes to create new compositions
-            </div>
-
-            <div class="feature">
-              <span class="method">Tap tempo</span>
-              Tap to the tempo of the music and create visuals that animate on the beat
-            </div>
-
-            <div class="feature">
-              <span class="method">Multiple displays</span>
-              Configure multiple displays to duplicate your visuals or create preview windows
+              <div class="feature">
+                <img src="features/displays.png" />
+                <span class="method">Multiple displays</span>
+                Configure multiple displays to duplicate your visuals or create preview windows
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <h3 id="Demo">Demo</h3>
+
+      <div class="panel">
+        <div class="main-video">
+          <iframe width="1024" height="576" src="https://www.youtube.com/embed/C01pvVyf-XU?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <h3 id="Installation">Installation</h3>
 
-      <div class="panel installation">
+      <div class="panel">
         <p>
           Visor is currently in alpha and subject to change. Testing, feedback, and critique are welcomed!
         </p>
@@ -128,38 +141,26 @@
         <br />
 
         <p>
-          Mac, Windows and Linux are supported.
-        </p>
-
-        <br />
-
-        <p>
-          Please <a class="text-link" href="https://github.com/Visor-Live/visor-builds/releases" target="_blank">click here</a> to download the latest builds.
-        </p>
-
-        <br />
-
-        <p>
           Visor requires Java to run. <a class="text-link" href="https://www.java.com/en/download/" target="_blank">Click here</a> to download Java if you don't already have it installed.
         </p>
-      </div>
 
-      <h3 id="Learning">Learning</h3>
-
-      <div class="panel learning">
-        <p>
-          To learn more about Ruby <a class="text-link" href="https://www.ruby-lang.org/en/" target="_blank">click here</a>.<br />
-          To learn more about Processing <a class="text-link" href="https://www.processing.org/" target="_blank">click here</a>.<br />
-        </p>
+        <br />
 
         <p>
-          A tutorial is coming soon.
+          <a class="text-link" href="https://github.com/Visor-Live/visor-builds/releases" target="_blank">Click here</a> to download the latest Mac, Windows and Linux builds.
         </p>
       </div>
 
       <h3 id="Reference">Reference</h3>
 
-      <div class="panel reference">
+      <div class="panel">
+        <p>
+          To learn more about Ruby <a class="text-link" href="https://www.ruby-lang.org/en/" target="_blank">click here</a>.<br />
+          To learn more about Processing <a class="text-link" href="https://www.processing.org/" target="_blank">click here</a>.<br />
+        </p>
+
+        <br />
+
         <p>
           To view the Processing reference <a class="text-link" href="https://www.processing.org/reference/" target="_blank">click here</a>.<br />
         </p>
@@ -267,7 +268,7 @@
 
       <h3 id="Contact">Contact</h3>
 
-      <div class="panel contact">
+      <div class="panel">
         <p>To give feedback or report bugs please contact <a class="text-link" id="emailAddress"></a></p>
       </div>
     </div>
