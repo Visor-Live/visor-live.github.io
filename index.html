@@ -173,98 +173,87 @@
           This reference is incomplete and subject to change.
         </p>
 
-        <span class="manager">Audio Input</span>
+        <span class="manager">General</span>
 
-        <div class="method-list">
-          <span class="method">volume</span>
-          <span class="method">fft(index)</span>
-          <span class="method">fft_range(start_index, end_index)</span>
-          <span class="method">fft_range_avg(start_index, end_index)</span>
-          <span class="method">fft_size</span>
-          <span class="method">waveform(index)</span>
-          <span class="method">waveform_size</span>
-          <span class="method">fft_smooth</span>
-          <span class="method">fft_scale</span>
-          <span class="method">set_fft_smooth(value)</span>
-          <span class="method">set_fft_scale(value)</span>
-        </div>
+        <span class="method"><span class="name">code_string</span><span class="return"> #=> string</span>
+        <span class="method"><span class="name">code_string</span>(code_tab_name : string)<span class="return"> #=> string</span>
+        <span class="method"><span class="name">master_opacity</span><span class="return"> #=> float</span>
+        <span class="method"><span class="name">set_master_opacity</span>(value : float)</span>
+        <span class="method"><span class="name">visor_class</span>(class_name : symbol) { class_body }</span>
 
-        <span class="manager">Tap Tempo</span>
+        <span class="manager">Audio input</span>
 
-        <div class="method-list">
-          <span class="method">on_beat</span>
-          <span class="method">beat_progress</span>
-          <span class="method">request_tap</span>
-        </div>
+        <span class="method"><span class="name">volume</span><span class="return"> #=> float</span></span>
+        <span class="method"><span class="name">fft_smooth</span><span class="return"> #=> float</span></span>
+        <span class="method"><span class="name">set_fft_smooth</span>(value : float)</span>
+        <span class="method"><span class="name">fft_scale</span><span class="return"> #=> float</span></span>
+        <span class="method"><span class="name">set_fft_scale</span>(value : float)</span>
+        <span class="method"><span class="name">fft</span>(index : int)</span>
+        <span class="method"><span class="name">fft_range</span>(start_index : int, end_index : int)</span>
+        <span class="method"><span class="name">fft_size</span><span class="return"> #=> int</span></span>
+        <span class="method"><span class="name">waveform</span>(index : int)</span>
+        <span class="method"><span class="name">waveform_size</span><span class="return"> #=> int</span></span>
+
+        <span class="manager">Tap tempo</span>
+
+        <span class="method"><span class="name">on_beat</span><span class="return"> #=> bool</span></span>
+        <span class="method"><span class="name">beat_progress</span><span class="return"> #=> float</span></span>
+        <span class="method"><span class="name">beat_progress</span>(per : number)<span class="return"> #=> float</span></span>
+        <span class="method"><span class="name">beat_count</span><span class="return"> #=> int</span></span>
+        <span class="method"><span class="name">request_tap</span></span>
+        <span class="method"><span class="name">reset_beat_count</span></span>
+        <span class="method"><span class="name">mute_tap_tempo</span><span class="return"> #=> bool</span></span>
+        <span class="method"><span class="name">set_mute_tap_tempo</span>(value : bool)</span>
+
+        <span class="manager">State management</span>
+
+        <span class="method"><span class="name">set_range</span>(variable_name : symbol, min : number, max : number)</span>
+        <span class="method"><span class="name">interpolate</span>(variable_name : symbol, t : float)</span>
+        <span class="method"><span class="name">set_range_on_layer</span>(layer_name : symbol, variable_name : symbol, min : number, max : number)</span>
+        <span class="method"><span class="name">interpolate_on_layer</span>(layer_name : symbol, variable_name : symbol, t : float)</span>
+
+        <span class="manager">Layers</span>
+
+        <span class="method"><span class="name">layer</span>(layer_name : symbol) { layer_body }</span>
+        <span class="method"><span class="name">get_layer</span>(layer_name : symbol)<span class="return"> #=> Layer</span></span>
+        <span class="method"><span class="name">default_layer</span><span class="return"> #=> Layer</span></span>
+        <span class="method"><span class="name">create_layer</span><span class="return"> #=> Layer</span></span>
+        <span class="method"><span class="name">delete_layer</span>(layer_name : symbol)</span>
+        <span class="method"><span class="name">move_layer_up</span>(layer_name : symbol)</span>
+        <span class="method"><span class="name">move_layer_down</span>(layer_name : symbol)</span>
+        <span class="method"><span class="name">set_visible</span>(value : bool)</span>
+        <span class="method"><span class="name">set_blend_mode</span>(value : enum)</span>
+        <span class="method"><span class="name">set_opacity</span>(value : float)</span>
+        <span class="method"><span class="name">set_visible_on_layer</span>(layer_name : symbol, value : bool)</span>
+        <span class="method"><span class="name">set_blend_mode_on_layer</span>(layer_name : symbol, value : enum)</span>
+        <span class="method"><span class="name">set_opacity_on_layer</span>(layer_name : symbol, value : float)</span>
 
         <span class="manager">MIDI</span>
 
-        <div class="method-list">
-          <span class="method">attach_state_to_midi(variable_name, midi_variable_name)</span>
-          <span class="method">detach_state_from_midi(variable_name, midi_variable_name)</span>
+        <span class="method"><span class="name">state_to_midi</span>(variable_name : symbol, midi_name: symbol, attach: bool)</span>
+        <span class="method"><span class="name">state_to_midi_on_layer</span>(layer_name : symbol, variable_name : symbol, midi_name: symbol, attach: bool)</span>
+        <span class="method"><span class="name">layer_state_to_midi</span>(variable_name : symbol, midi_name : symbol, attach : bool)</span>
+        <span class="method"><span class="name">visor_state_to_midi</span>(scope : symbol, variable_name: symbol, midi_name: symbol, attach: bool)</span>
+        <span class="method"><span class="name">load_midi_mapping</span>(filename : string)</span>
+        <span class="method"><span class="name">clear_midi_mappings</span></span>
 
-          <!-- <span class="method">na1, na2, na3, na4</span>
-          <span class="method">na1_down, na2_down, na3_down, na4_down</span>
-          <span class="method">na1_up, na2_up, na3_up, na4_up</span>
+        <span class="manager">Processing extensions</span>
 
-          <span class="method">nb1, nb2, nb3, nb4</span>
-          <span class="method">nb1_down, nb2_down, nb3_down, nb4_down</span>
-          <span class="method">nb1_up, nb2_up, nb3_up, nb4_up</span>
+        <span class="method"><span class="name">load_shape</span>(filename : string, enable_style : bool)</span>
+        <span class="method"><span class="name">rotate_at</span>(angle : number, x : number, y : number)</span>
+        <span class="method"><span class="name">with_style</span> { block }</span>
+        <span class="method"><span class="name">with_matrix</span> { block }</span>
+        <span class="method"><span class="name">with_translate</span>(x : number, y, z : number) { block }</span>
+        <span class="method"><span class="name">with_scale</span>(x : number, y : number, z : number) { block }</span>
+        <span class="method"><span class="name">with_rotate_x</span>(x : number) { block }</span>
+        <span class="method"><span class="name">with_rotate_y</span>(y : number) { block }</span>
+        <span class="method"><span class="name">with_rotate_z</span>(z : number) { block }</span>
+        <span class="method"><span class="name">with_rotate</span>(*args) { block }</span>
+        <span class="method"><span class="name">with_graphics</span>(graphics_layer : PGraphics, *args) { |*args| block }</span>
 
-          <span class="method">ka1, ka2, ka3</span>
-          <span class="method">kb1, kb2, kb3</span>
-          <span class="method">kc1, kc2, kc3</span>
+        <span class="manager">VisorClass (class to extend your own classes from)</span>
 
-          <span class="method">s1, s2, s3</span> -->
-        </div>
-
-        <!-- <p>
-          <strong>Please note</strong><br />
-          Currently, the Novation Launch Control XL is the only supported controller and partially at that - full support for generic controllers is coming soon.<br />
-          <span class="method-inline">n*</span> maps to a note button,
-          <span class="method-inline">k*</span> maps to a knob control,
-          <span class="method-inline">s*</span> maps to a slider control.
-        </p> -->
-
-        <span class="manager">Live Code</span>
-
-        <div class="method-list">
-          <span class="method">code_string</span>
-        </div>
-
-        <span class="manager">State Management</span>
-
-        <div class="method-list">
-          <span class="method">set_range(variable_name, min, max)</span>
-          <span class="method">interpolate(variable_name, t)</span>
-        </div>
-
-        <span class="manager">Processing Extensions</span>
-
-        <div class="method-list">
-          <span class="method">load_shape(path, enable_style = false)</span>
-          <span class="method">rotate_at(angle, x, y)</span>
-          <span class="method">with_style</span>
-          <span class="method">with_matrix</span>
-          <span class="method">with_translate(x, y, z = 0)</span>
-          <span class="method">with_scale(x, y, z = 1)</span>
-          <span class="method">with_rotate_x(x)</span>
-          <span class="method">with_rotate_y(y)</span>
-          <span class="method">with_rotate_z(z)</span>
-          <span class="method">with_rotate(*args)</span>
-          <span class="method">with_graphics(graphics_layer, *args, &block)</span>
-        </div>
-
-        <span class="manager">Other</span>
-
-        <div class="method-list">
-          <span class="method">set_master_opacity(value)</span>
-        </div>
-
-        <p>
-          <strong>Please note</strong><br />
-          All methods that start with <span class="method-inline">with_</span> accept a block as an argument.
-        </p>
+        <span class="method"><span class="name">layer=(layer : Layer)</span></span>
       </div>
 
       <h3 id="Contact">Contact</h3>

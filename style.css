@@ -136,7 +136,14 @@ p {
 
 .method {
   display: block;
+}
+
+.method .name {
   color: #66D9EF;
+}
+
+.method .return {
+  color: #E6DB74;
 }
 
 .method-inline {
