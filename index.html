@@ -37,9 +37,9 @@
             <a class="nav-link" href="#Installation">Installation</a>
           </li>
 
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link" href="#Reference">Reference</a>
-          </li>
+          </li>-->
 
           <li class="nav-item">
             <a class="nav-link" href="#Contact">Contact</a>
@@ -152,7 +152,7 @@
         </p>
       </div>
 
-      <h3 id="Reference">Reference</h3>
+      <!--<h3 id="Reference">Reference</h3>
 
       <div class="panel">
         <p>
@@ -181,6 +181,13 @@
         <span class="method"><span class="name">set_master_opacity</span>(value : float)</span>
         <span class="method"><span class="name">visor_class</span>(class_name : symbol) { class_body }</span>
 
+        <span class="manager">State management</span>
+
+        <span class="method"><span class="name">set_range</span>(variable_name : symbol, min : number, max : number)</span>
+        <span class="method"><span class="name">interpolate</span>(variable_name : symbol, t : float)</span>
+        <span class="method"><span class="name">set_range_on_layer</span>(layer_name : symbol, variable_name : symbol, min : number, max : number)</span>
+        <span class="method"><span class="name">interpolate_on_layer</span>(layer_name : symbol, variable_name : symbol, t : float)</span>
+
         <span class="manager">Audio input</span>
 
         <span class="method"><span class="name">volume</span><span class="return"> #=> float</span></span>
@@ -204,13 +211,7 @@
         <span class="method"><span class="name">reset_beat_count</span></span>
         <span class="method"><span class="name">mute_tap_tempo</span><span class="return"> #=> bool</span></span>
         <span class="method"><span class="name">set_mute_tap_tempo</span>(value : bool)</span>
-
-        <span class="manager">State management</span>
-
-        <span class="method"><span class="name">set_range</span>(variable_name : symbol, min : number, max : number)</span>
-        <span class="method"><span class="name">interpolate</span>(variable_name : symbol, t : float)</span>
-        <span class="method"><span class="name">set_range_on_layer</span>(layer_name : symbol, variable_name : symbol, min : number, max : number)</span>
-        <span class="method"><span class="name">interpolate_on_layer</span>(layer_name : symbol, variable_name : symbol, t : float)</span>
+        <span class="method"><span class="name">clear_tap_tempo</span></span>
 
         <span class="manager">Layers</span>
 
@@ -230,10 +231,10 @@
 
         <span class="manager">MIDI</span>
 
-        <span class="method"><span class="name">state_to_midi</span>(variable_name : symbol, midi_name: symbol, attach: bool)</span>
-        <span class="method"><span class="name">state_to_midi_on_layer</span>(layer_name : symbol, variable_name : symbol, midi_name: symbol, attach: bool)</span>
+        <span class="method"><span class="name">state_to_midi</span>(variable_name : symbol, midi_name : symbol, attach : bool)</span>
+        <span class="method"><span class="name">state_to_midi_on_layer</span>(layer_name : symbol, variable_name : symbol, midi_name : symbol, attach : bool)</span>
         <span class="method"><span class="name">layer_state_to_midi</span>(variable_name : symbol, midi_name : symbol, attach : bool)</span>
-        <span class="method"><span class="name">visor_state_to_midi</span>(scope : symbol, variable_name: symbol, midi_name: symbol, attach: bool)</span>
+        <span class="method"><span class="name">visor_state_to_midi</span>(scope : symbol, variable_name : symbol, midi_name : symbol, attach : bool)</span>
         <span class="method"><span class="name">load_midi_mapping</span>(filename : string)</span>
         <span class="method"><span class="name">clear_midi_mappings</span></span>
 
@@ -243,7 +244,7 @@
         <span class="method"><span class="name">rotate_at</span>(angle : number, x : number, y : number)</span>
         <span class="method"><span class="name">with_style</span> { block }</span>
         <span class="method"><span class="name">with_matrix</span> { block }</span>
-        <span class="method"><span class="name">with_translate</span>(x : number, y, z : number) { block }</span>
+        <span class="method"><span class="name">with_translate</span>(x : number, y : number, z : number) { block }</span>
         <span class="method"><span class="name">with_scale</span>(x : number, y : number, z : number) { block }</span>
         <span class="method"><span class="name">with_rotate_x</span>(x : number) { block }</span>
         <span class="method"><span class="name">with_rotate_y</span>(y : number) { block }</span>
@@ -254,7 +255,7 @@
         <span class="manager">VisorClass (class to extend your own classes from)</span>
 
         <span class="method"><span class="name">layer=(layer : Layer)</span></span>
-      </div>
+      </div>-->
 
       <h3 id="Contact">Contact</h3>
 
