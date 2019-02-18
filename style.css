@@ -115,6 +115,13 @@ p {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .text-link {
   color: #A6E22E;
   cursor: pointer;
