@@ -94,6 +94,12 @@ p {
   height: 100%;
 }
 
+.video-caption {
+  text-align: center;
+  margin-top: -24px;
+  margin-bottom: 16px;
+}
+
 .row {
   display: flex;
 }
