@@ -115,7 +115,7 @@ p {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .feature img {
     width: 100%;
     height: auto;
