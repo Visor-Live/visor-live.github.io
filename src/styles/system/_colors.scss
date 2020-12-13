@@ -1,0 +1,68 @@
+/* Standard */
+
+$white: hsl(0, 0, 100);
+$black: hsl(0, 0, 0);
+
+/* Grey */
+
+$grey-010: hsl(0, 0, 90);
+$grey-020: hsl(0, 0, 84);
+$grey-030: hsl(0, 0, 72);
+$grey-040: hsl(0, 0, 52);
+$grey-050: hsl(0, 0, 42);
+$grey-060: hsl(0, 0, 33);
+$grey-070: hsl(0, 0, 27);
+$grey-080: hsl(0, 0, 23);
+$grey-090: hsl(0, 0, 21);
+$grey-100: hsl(0, 0, 18);
+$grey-110: hsl(0, 0, 16);
+$grey-120: hsl(0, 0, 13);
+
+/* Primary */
+
+$primary-010: hsl(190, 80%, 92%);
+$primary-020: hsl(190, 68%, 82%);
+$primary-030: hsl(190, 58%, 70%);
+$primary-040: hsl(190, 52%, 57%);
+$primary-050: hsl(190, 50%, 46%);
+$primary-060: hsl(190, 55%, 41%);
+$primary-070: hsl(190, 62%, 36%);
+$primary-080: hsl(190, 75%, 30%);
+$primary-090: hsl(190, 85%, 24%);
+
+/* Shadows */
+
+$shadow-010: hsla(0, 0, 0, 0.05);
+$shadow-020: hsla(0, 0, 0, 0.1);
+$shadow-030: hsla(0, 0, 0, 0.15);
+$shadow-040: hsla(0, 0, 0, 0.2);
+$shadow-050: hsla(0, 0, 0, 0.25);
+
+/* Backgrounds */
+
+$background-scrollbar: $grey-080;
+$background-scrollbar-light: $grey-070;
+$background-scrollbar-lightest: $grey-060;
+
+$background-card: $grey-090;
+$background-card-light: $grey-070;
+
+$background-tabbar: $grey-100;
+$background-tabbar-condensed: $grey-080;
+
+/* Text */
+
+$text-primary: $white;
+$text-secondary: $grey-030;
+$text-tertiary: $grey-050;
+
+/* Highlights */
+
+$tab-highlight: $primary-060;
+$tab-highlight-condensed: $grey-110;
+
+$text-selection: $primary-050;
+
+/* Editor theme */
+
+$instance-variable-color: #a6e22e;

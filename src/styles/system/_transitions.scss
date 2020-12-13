@@ -1,0 +1,27 @@
+/* Transitions */
+
+$transition-duration-fastest: 80ms;
+$transition-duration-fast: 120ms;
+$transition-duration-regular: 200ms;
+$transition-duration-slow: 350ms;
+$transition-duration-slowest: 500ms;
+
+@mixin transition-fastest($target: all) {
+  transition: $target $transition-duration-fastest ease;
+}
+
+@mixin transition-fast($target: all) {
+  transition: $target $transition-duration-fast ease;
+}
+
+@mixin transition-regular($target: all) {
+  transition: $target $transition-duration-regular ease;
+}
+
+@mixin transition-slow($target: all) {
+  transition: $target $transition-duration-slow ease;
+}
+
+@mixin transition-slowest($target: all) {
+  transition: $target $transition-duration-slowest ease;
+}

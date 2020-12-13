@@ -1,0 +1,87 @@
+@use '../../../styles/system/index' as *;
+
+.visor-tab-bar {
+  @include bottom-border-shadow;
+  background: $background-tabbar;
+  white-space: nowrap;
+
+  &__contents {
+    @include scrollbar-light;
+    overflow: hidden;
+
+    &:hover {
+      overflow-x: overlay;
+    }
+
+    &::-webkit-scrollbar {
+      width: $spacing-4;
+      height: $spacing-4;
+    }
+  }
+
+  &__tab {
+    @include transition-fast;
+    display: inline-block;
+    padding: $spacing-16;
+    border-bottom: $tab-highlight-height solid transparent;
+    color: $text-secondary;
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+    outline: none;
+    white-space: nowrap;
+
+    .visor-close-button {
+      margin-left: $spacing-8;
+    }
+
+    .visor-icon {
+      @include transition-fast;
+      cursor: pointer;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &--selected {
+      .visor-icon {
+        opacity: 1;
+      }
+    }
+
+    &--selected {
+      border-color: $tab-highlight;
+      color: $text-primary;
+    }
+
+    &:hover,
+    &:focus {
+      color: $text-primary;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $text-secondary;
+    }
+  }
+
+  &--condensed {
+    background: $background-tabbar-condensed;
+    box-shadow: none;
+
+    .visor-tab-bar {
+      &__tab {
+        padding: $spacing-8 $spacing-16;
+        border: 0;
+        font-size: $font-size-14;
+        line-height: $line-height-14;
+
+        &--selected {
+          background: $tab-highlight-condensed;
+        }
+      }
+    }
+  }
+}
