@@ -1,4 +1,4 @@
-@use '../system/index' as *;
+@use '~@bit/emperorjack.refinery-ui.styles.system' as *;
 
 .app {
   display: flex;
@@ -16,6 +16,7 @@
     @include scrollbar-lightest;
     display: flex;
     width: 100%;
+    padding: 0 $spacing-16;
     align-items: center;
     flex-direction: column;
     overflow-y: overlay;
@@ -55,11 +56,11 @@
 }
 
 .feature {
-  max-width: calc(#{$spacing-512} + #{$spacing-64});
+  max-width: calc(512px + #{$spacing-64});
   margin: 0 $spacing-32;
 
   img {
-    max-width: calc(#{$spacing-512} + #{$spacing-64});
+    max-width: calc(512px + #{$spacing-64});
     width: 100%;
     margin-bottom: $spacing-4;
   }
@@ -94,4 +95,5 @@
 
 .copyright-notice {
   margin: $spacing-16 0;
+  text-align: center;
 }

@@ -4,9 +4,9 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
-import Card from './library/Card';
-import TabBar from './library/TabBar';
-import Text from './library/Text';
+import Card from '@bit/emperorjack.refinery-ui.atoms.card';
+import Text from '@bit/emperorjack.refinery-ui.atoms.text';
+import TabBar from '@bit/emperorjack.refinery-ui.molecules.tab-bar';
 import Feature from './Feature';
 import Link from './Link';
 import Video from './Video';

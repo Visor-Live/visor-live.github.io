@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Text from './library/Text';
+import Text from '@bit/emperorjack.refinery-ui.atoms.text';
 
 const Feature = ({ title, description, src }) => (
   <div className="feature">

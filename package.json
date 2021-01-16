@@ -43,6 +43,11 @@
     ]
   },
   "devDependencies": {
+    "@bit/emperorjack.refinery-ui.atoms.card": "^0.1.0",
+    "@bit/emperorjack.refinery-ui.atoms.text": "^0.1.0",
+    "@bit/emperorjack.refinery-ui.molecules.tab-bar": "^0.1.0",
+    "@bit/emperorjack.refinery-ui.styles.system": "^0.1.0",
+    "@bit/emperorjack.refinery-ui.utility.base": "^0.1.0",
     "eslint-config-airbnb": "^18.2.1"
   }
 }
