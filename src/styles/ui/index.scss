@@ -1,5 +1,9 @@
 @use '~@bit/emperorjack.refinery-ui.styles.system' as *;
 
+body {
+  user-select: unset;
+}
+
 .app {
   display: flex;
   width: 100%;
