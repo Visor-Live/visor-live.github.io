@@ -42,13 +42,12 @@ body {
 
 .hero-image {
   @include box-shadow-5;
-  display: flex;
-  justify-content: center;
   margin: $spacing-32 0;
 
   img {
     max-width: 1024px;
     width: 100%;
+    height: 100%;
   }
 }
 
