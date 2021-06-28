@@ -4,9 +4,7 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
-import Card from '@bit/emperorjack.refinery-ui.atoms.card';
-import Text from '@bit/emperorjack.refinery-ui.atoms.text';
-import TabBar from '@bit/emperorjack.refinery-ui.molecules.tab-bar';
+import { Card, Text, TabBar } from '@emperorjack/refinery-ui';
 import Feature from './Feature';
 import Link from './Link';
 import Video from './Video';
@@ -52,7 +50,7 @@ const App = () => {
   }, [currentSection, containerRef]);
 
   useEffect(() => {
-    if (!containerRef) return null;
+    if (!containerRef) return undefined;
 
     containerRef.addEventListener('scroll', handleScroll);
 
