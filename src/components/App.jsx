@@ -199,7 +199,7 @@ const App = () => {
         </Card>
 
         <Text type="tertiary" className="copyright-notice">
-          Copyright © 2020 Jack Purvis - All Rights Reserved
+          Copyright © {new Date().getFullYear()} Jack Purvis - All Rights Reserved
         </Text>
       </div>
     </div>
