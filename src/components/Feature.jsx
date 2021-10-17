@@ -10,7 +10,7 @@ const Feature = ({ title, description, src }) => (
       {title}
     </Text>
 
-    <Text size="16" type="secondary">
+    <Text size="16" variant="secondary">
       {description}
     </Text>
   </div>

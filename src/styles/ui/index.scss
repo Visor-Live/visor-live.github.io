@@ -23,10 +23,11 @@ $instance-variable-color: #a6e22e;
     @include scrollbar-lightest;
     display: flex;
     width: 100%;
-    padding: 0 $spacing-16;
+    padding: $spacing-24 $spacing-16 0;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
+    gap: $spacing-16;
   }
 }
 
@@ -62,8 +63,11 @@ $instance-variable-color: #a6e22e;
 }
 
 .feature {
+  display: flex;
+  flex-direction: column;
   max-width: calc(512px + #{$spacing-64});
   margin: 0 $spacing-32;
+  gap: $spacing-8;
 
   img {
     max-width: calc(512px + #{$spacing-64});

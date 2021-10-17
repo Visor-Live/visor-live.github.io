@@ -72,7 +72,7 @@ const App = () => {
       <div className="app__content" ref={(ref) => setContainerRef(ref)}>
         <Text size="h3" id="home">Visor</Text>
 
-        <Card light>
+        <Card>
           <Text size="18">
             Visor is a live coding environment for real-time visual performance
             <br />
@@ -90,7 +90,7 @@ const App = () => {
 
         <Text size="h4" id="features">Features</Text>
 
-        <Card light>
+        <Card>
           <div className="features">
             <Feature
               title="Live Coding with Processing"
@@ -144,7 +144,7 @@ const App = () => {
 
         <Text size="h4" id="demo">Demo</Text>
 
-        <Card light>
+        <Card>
           <Video
             name="demo-video-1"
             src="https://www.youtube.com/embed/_K57O4xmAE8"
@@ -166,7 +166,7 @@ const App = () => {
 
         <Text size="h4" id="installation">Installation</Text>
 
-        <Card light>
+        <Card>
           <Text size="16">
             Visor is currently in alpha and subject to change.
             Testing, feedback, and critique are welcomed.
@@ -181,7 +181,7 @@ const App = () => {
 
         <Text size="h4" id="feedback">Feedback</Text>
 
-        <Card light>
+        <Card>
           <Text size="16">
             To report bugs, submit feature requests, or give further feedback, please contact
             {' '}
@@ -198,7 +198,7 @@ const App = () => {
           </Text>
         </Card>
 
-        <Text type="tertiary" className="copyright-notice">
+        <Text variant="tertiary" className="copyright-notice">
           Copyright © {new Date().getFullYear()} Jack Purvis - All Rights Reserved
         </Text>
       </div>
