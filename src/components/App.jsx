@@ -4,7 +4,12 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
-import { Card, Text, TabBar } from '@emperorjack/refinery-ui';
+import {
+  Card,
+  Text,
+  TabBar,
+  TabBarTab,
+} from '@emperorjack/refinery-ui';
 import Feature from './Feature';
 import Link from './Link';
 import Video from './Video';
@@ -64,7 +69,7 @@ const App = () => {
       <div className="app__nav">
         <TabBar selectedTab={currentSection} setSelectedTab={handleSetSection}>
           {sections.map((section) => (
-            <TabBar.Tab key={section} text={section} />
+            <TabBarTab key={section} text={section} />
           ))}
         </TabBar>
       </div>

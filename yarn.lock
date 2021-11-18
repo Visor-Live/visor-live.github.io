@@ -1935,10 +1935,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@emperorjack/refinery-ui@0.8.0":
-  version "0.8.0"
-  resolved "https://npm.pkg.github.com/download/@emperorjack/refinery-ui/0.8.0/fda2faf503661b1bfe51f113f98492147a3b6a8a9840fb3cf3f5582dc75130aa#bc03bdf05180e8bd3933d09998eb5bf452509092"
-  integrity sha512-juzWCyCxLdtoDIkkeucXiahZNVWWQBACyTN0fWdb1r5bTaTFVm2n7vBRtyIqv1GliOr3CUv2bSFvWo5/+vrC9Q==
+"@emperorjack/refinery-ui@0.9.0":
+  version "0.9.0"
+  resolved "https://npm.pkg.github.com/download/@emperorjack/refinery-ui/0.9.0/a7ab6aa46e2ac7d2fc6125f5a1816948a17b98590d66934edfa09aca0cdde5e8#f96528a5ba1288ff0c53054a325d035af9327ca9"
+  integrity sha512-K4H95UVzbxXdovOsaM/E0kH9yj2zutHjele0NbMyTKEiDfzYtWMJm7PUrORHsW4PKBu0XKxddoREOH17gSv91Q==
 
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
@@ -1960,6 +1960,25 @@
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.0.tgz#d5c464abe655d2e2cb134c503db455b7af6c03a6"
   integrity sha512-Rzj90wbZQnNzazqzoiu5HzMEMdqMJLUVFOo699sinTXrZRm1aB5iX2HTiK2VlPnH4M6u8yYnJ7CebOyamfWlqw==
+
+"@fortawesome/fontawesome-common-types@^0.2.36":
+  version "0.2.36"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.36.tgz#b44e52db3b6b20523e0c57ef8c42d315532cb903"
+  integrity sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==
+
+"@fortawesome/fontawesome-svg-core@^1.2.36":
+  version "1.2.36"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.36.tgz#4f2ea6f778298e0c47c6524ce2e7fd58eb6930e3"
+  integrity sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.36"
+
+"@fortawesome/react-fontawesome@^0.1.15":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.16.tgz#ce7665490214e20f929368d6b65f68884a99276a"
+  integrity sha512-aLmzDwC9rEOAJv2UJdMns89VZR5Ry4IHu5dQQh24Z/lWKEm44lfQr1UNalZlkUaQN8d155tNh+CS7ntntj1VMA==
+  dependencies:
+    prop-types "^15.7.2"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
