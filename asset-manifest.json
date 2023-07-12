@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.804c4863.chunk.css",
-    "main.js": "/static/js/main.61ac9dd2.chunk.js",
-    "main.js.map": "/static/js/main.61ac9dd2.chunk.js.map",
+    "main.css": "/static/css/main.6228df05.chunk.css",
+    "main.js": "/static/js/main.e5df2787.chunk.js",
+    "main.js.map": "/static/js/main.e5df2787.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d99bd389.js",
     "runtime-main.js.map": "/static/js/runtime-main.d99bd389.js.map",
     "static/css/2.956c3878.chunk.css": "/static/css/2.956c3878.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.8a92a01a.chunk.js.map": "/static/js/2.8a92a01a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.956c3878.chunk.css.map": "/static/css/2.956c3878.chunk.css.map",
-    "static/css/main.804c4863.chunk.css.map": "/static/css/main.804c4863.chunk.css.map",
+    "static/css/main.6228df05.chunk.css.map": "/static/css/main.6228df05.chunk.css.map",
     "static/js/2.8a92a01a.chunk.js.LICENSE.txt": "/static/js/2.8a92a01a.chunk.js.LICENSE.txt",
     "static/media/500.css": "/static/media/raleway-vietnamese-500-normal.0dccf4fb.woff2",
     "static/media/600.css": "/static/media/raleway-vietnamese-600-normal.175ac4dc.woff2"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.d99bd389.js",
     "static/css/2.956c3878.chunk.css",
     "static/js/2.8a92a01a.chunk.js",
-    "static/css/main.804c4863.chunk.css",
-    "static/js/main.61ac9dd2.chunk.js"
+    "static/css/main.6228df05.chunk.css",
+    "static/js/main.e5df2787.chunk.js"
   ]
 }
