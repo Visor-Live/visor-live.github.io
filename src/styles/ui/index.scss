@@ -103,7 +103,15 @@ $instance-variable-color: #a6e22e;
   }
 }
 
-.copyright-notice {
-  padding: $spacing-8 0;
-  text-align: center;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-4;
+  padding: $spacing-16;
+
+  .text-link {
+    color: $green-040;
+    text-decoration: none;
+  }
 }

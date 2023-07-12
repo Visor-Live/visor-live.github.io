@@ -203,9 +203,18 @@ const App = () => {
           </Text>
         </Card>
 
-        <Text variant="tertiary" className="copyright-notice">
-          Copyright © {new Date().getFullYear()} Jack Purvis - All Rights Reserved
-        </Text>
+        <div className="footer">
+          <Text size="16" variant="tertiary">
+            A project by{' '}
+            <Link
+              url="https://www.jackvpurvis.com"
+            >
+              Jack Purvis
+            </Link>
+          </Text>
+
+          <Text variant="tertiary">© {new Date().getFullYear()}</Text>
+        </div>
       </div>
     </div>
   );
